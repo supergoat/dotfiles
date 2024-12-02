@@ -1,4 +1,6 @@
-# Path to your oh-my-zsh installation.
+export EDITOR="nvim"
+export VISUAL="nvim"
+
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 
