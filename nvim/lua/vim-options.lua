@@ -20,13 +20,6 @@ vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
 	end,
 })
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<C-D>",
-	":Gvdiffsplit " .. vim.fn.expand("%") .. "<CR>",
-	{ noremap = true, silent = true }
-)
-
 -- Navigate vim panes better
 vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")
 vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")

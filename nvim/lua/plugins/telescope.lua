@@ -40,7 +40,11 @@ return {
 			vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 			vim.keymap.set("n", "<leader>fs", builtin.grep_string, {})
 			vim.keymap.set("n", "<leader>gs", builtin.git_status, {})
-			vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
+			vim.keymap.set("n", "<leader>fb", function()
+				builtin.buffers({
+					initial_mode = "normal", -- Start Telescope in normal mode
+				})
+			end, {})
 		end,
 	},
 	{
